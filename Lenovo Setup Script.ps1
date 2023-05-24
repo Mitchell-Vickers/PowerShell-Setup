@@ -44,14 +44,9 @@ if (-not $chocoInstalled) {
 
 # Define the packages to install
 $packages = @(
-    "googlechrome",
-    "brave",
-    "firefox",
     "vlc",
-    "libreoffice-fresh",
     "7zip"
 )
-
 # Install each package
 foreach ($package in $packages) {
     choco install $package -y
